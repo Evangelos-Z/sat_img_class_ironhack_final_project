@@ -1,1 +1,1 @@
-# Final_Project-Sat_Img_Class
+# Satellite Image Classification
