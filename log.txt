@@ -1,0 +1,17 @@
+18/07: Isi helped me find a new topic and dataset: Satellite Image Classification https://www.kaggle.com/datasets/mahmoudreda55/satellite-image-classification
+19/07: Started with new project from scratch. Learned how to conduct directory operations with os and shutil
+	Data explored and cleaned
+	Duplicated images are copied images with a name format that would pass as unique at first glance but fixed it
+	There was no dataframe to accompany image data, so I worked with nested lists that I created
+	Then realised how stupid that was and decided to use dataframe instead
+20/07: Created dataframe with image names and classes
+	Adapted notebook
+	Balanced Data
+21/07: Train-test split and dataframe fitted to it
+	Began research on CNNs
+To Do: RESEARCH MORE
+	KERAS
+	XGBOOST
+	COMPUTER VISION
+	BASELINE MODEL BEFORE BALANCED SET MODEL
+	FUNCTION TO MOVE ELEMENTS SOONER IN NOTEBOOK
