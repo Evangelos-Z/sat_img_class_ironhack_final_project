@@ -1,17 +1,43 @@
-18/07: Isi helped me find a new topic and dataset: Satellite Image Classification https://www.kaggle.com/datasets/mahmoudreda55/satellite-image-classification
-19/07: Started with new project from scratch. Learned how to conduct directory operations with os and shutil
+18/07: 	Isi helped me find a new topic and dataset: Satellite Image Classification https://www.kaggle.com/datasets/mahmoudreda55/satellite-image-classification
+
+19/07: 	Started with new project from scratch. Learned how to conduct directory operations with os and shutil
 	Data explored and cleaned
 	Duplicated images are copied images with a name format that would pass as unique at first glance but fixed it
 	There was no dataframe to accompany image data, so I worked with nested lists that I created
 	Then realised how stupid that was and decided to use dataframe instead
-20/07: Created dataframe with image names and classes
+
+20/07: 	Created dataframe with image names and classes
 	Adapted notebook
 	Balanced Data
-21/07: Train-test split and dataframe fitted to it
+
+21/07: 	Train-test split and dataframe fitted to it
 	Began research on CNNs
-To Do: RESEARCH MORE
+
+22/07: 	Fixed lack of data for baseline models, wrote function for train-test split
+	Decided that I will probably not work on computer vision, CNN and XGBoost enough for the project
+	CNN research continues:
+		Resources: The Chain Rule 	--> https://www.youtube.com/watch?v=wl1myxrtQHQ&list=LL&index=3&ab_channel=StatQuestwithJoshStarmer
+			   Gradient Descent 	--> https://www.youtube.com/watch?v=sDv4f4s2SB8&t=8s&ab_channel=StatQuestwithJoshStarmer
+			   Neural Networks 1 	--> https://www.youtube.com/watch?v=CqOfi41LfDw&list=LL&index=4&ab_channel=StatQuestwithJoshStarmer
+					 & 2	--> https://www.youtube.com/watch?v=IN2XmBhILt4&list=LL&index=2&ab_channel=StatQuestwithJoshStarmer
+			   flow_from_directory
+				  & generators	--> https://vijayabhaskar96.medium.com/tutorial-image-classification-with-keras-flow-from-directory-and-generators-95f75ebe5720
+	FOUND ERROR in my handling of directories. Test set needs to be mixed. Validation set needed. Replace test set with validation set and create test from remaining train set
+		MUST ADD DESTINATION PATHS FOR TEST SETS. MUST ADD DESTINATION FOR TEST SET TO homemade_split. MUST ADAPT WHOLE SCRIPT. MUST RUN IT ONCE WITH ADAPTATIONS TO SEE EVERYTHING WORKS
+	Fixed most of the script, homemade_split seems finished, MUST SET UP VARIABLES AND RUN
+
+23/07:	Running, making last adjustments to patched up script. All seems fine.
+	Trying to decide on a reasonable train-test split.
+		Resources: 			--> https://cs230.stanford.edu/blog/split/
+						--> https://onlinelibrary.wiley.com/doi/full/10.1002/sam.11583#:~:text=A%20commonly%20used%20ratio%20is,are%20also%20used%20in%20practice.
+	FOUND ERROR: Split should be conducted with random.seed(number) and sample(filenames, how_much) instead of sample() alone, because I want the data to shuffle, but in a deterministic way
+	Potential sensible comparisons: 1. Baseline model with imbalanced_df vs. model with balanced_df with same parameter tuning
+					2. Model with balanced_df vs. same model with balanced_df and different parameter tuning
+					3. Balanced_df with different models and best possible scores of each model
+	Had to fix homemade_split yet again, kept stumbling into errors. Took the entire evening and still nothing to show for it...
+	Problem lied in a ":" symbol I could not see to delete. Finally managed to fix it. Script adapted. Sets prepared. Ready for a test drive
+
+To Do: 	RESEARCH MORE
+	BASELINE MODELs BEFORE BALANCED SET MODELs
 	KERAS
 	XGBOOST
-	COMPUTER VISION
-	BASELINE MODEL BEFORE BALANCED SET MODEL
-	FUNCTION TO MOVE ELEMENTS SOONER IN NOTEBOOK
