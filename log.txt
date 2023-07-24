@@ -20,9 +20,8 @@
 			   Gradient Descent 	--> https://www.youtube.com/watch?v=sDv4f4s2SB8&t=8s&ab_channel=StatQuestwithJoshStarmer
 			   Neural Networks 1 	--> https://www.youtube.com/watch?v=CqOfi41LfDw&list=LL&index=4&ab_channel=StatQuestwithJoshStarmer
 					 & 2	--> https://www.youtube.com/watch?v=IN2XmBhILt4&list=LL&index=2&ab_channel=StatQuestwithJoshStarmer
-			   flow_from_directory
-				  & generators	--> https://vijayabhaskar96.medium.com/tutorial-image-classification-with-keras-flow-from-directory-and-generators-95f75ebe5720
-	FOUND ERROR in my handling of directories. Test set needs to be mixed. Validation set needed. Replace test set with validation set and create test from remaining train set
+
+	FOUND ERROR: in my handling of directories. Test set needs to be mixed. Validation set needed. Replace test set with validation set and create test from remaining train set
 		MUST ADD DESTINATION PATHS FOR TEST SETS. MUST ADD DESTINATION FOR TEST SET TO homemade_split. MUST ADAPT WHOLE SCRIPT. MUST RUN IT ONCE WITH ADAPTATIONS TO SEE EVERYTHING WORKS
 	Fixed most of the script, homemade_split seems finished, MUST SET UP VARIABLES AND RUN
 
@@ -37,7 +36,28 @@
 	Had to fix homemade_split yet again, kept stumbling into errors. Took the entire evening and still nothing to show for it...
 	Problem lied in a ":" symbol I could not see to delete. Finally managed to fix it. Script adapted. Sets prepared. Ready for a test drive
 
+	More CNN Resources:
+			  flow_from_directory
+				 & generators	--> https://vijayabhaskar96.medium.com/tutorial-image-classification-with-keras-flow-from-directory-and-generators-95f75ebe5720
+			   random seed		--> https://medium.com/@debanjana.bhattacharyya9818/numpy-random-seed-101-explained-2e96ee3fd90b
+			   Train, valid, test	--> https://cs230.stanford.edu/blog/split/
+						--> https://onlinelibrary.wiley.com/doi/full/10.1002/sam.11583#:~:text=A%20commonly%20used%20ratio%20is,are%20also%20used%20in%20practice.
+						--> Sabina's wisdom
+			   batch_size & epoch	--> https://machinelearningmastery.com/difference-between-a-batch-and-an-epoch/#:~:text=The%20batch%20size%20is%20a%20number%20of%20samples%20processed%20before,samples%20in%20the%20training%20dataset.
+			   Tutorial		--> https://keras.io/examples/vision/image_classification_from_scratch/
+			   keras.fit &
+			   keras.fit_generator	--> https://www.geeksforgeeks.org/keras-fit-and-keras-fit_generator/
+			   Units, shapes,
+			    layers & dim	--> https://stackoverflow.com/questions/44747343/keras-input-explanation-input-shape-units-batch-size-dim-etc#:~:text=The%20input%20shape&text=In%20Keras%2C%20the%20input%20layer,50%2C50%2C3)%20.
+	
+	1st attempts at running CNN with imbalanced data: Failure. Getting error message "ValueError: Shapes (None, 1) and (None, 4) are incompatible" right after the 1st epoch seems to finish
+	Error fixed: Had forgotten to change class_mode for val_ds to categorical
+	Model finally running smoothly for the first time. Exhausted but feeling kind of better finally
+
 To Do: 	RESEARCH MORE
 	BASELINE MODELs BEFORE BALANCED SET MODELs
+		1. Baseline of imbalanced
+		2. Baseline of balanced
+		3. Fine-tuned balanced ****need to see how I can automate fine-tuning?****
 	KERAS
 	XGBOOST
