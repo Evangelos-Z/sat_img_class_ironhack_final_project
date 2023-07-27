@@ -27,6 +27,7 @@
 
 23/07:	Running, making last adjustments to patched up script. All seems fine.
 	Trying to decide on a reasonable train-test split.
+		
 		Resources: 			--> https://cs230.stanford.edu/blog/split/
 						--> https://onlinelibrary.wiley.com/doi/full/10.1002/sam.11583#:~:text=A%20commonly%20used%20ratio%20is,are%20also%20used%20in%20practice.
 	FOUND ERROR: Split should be conducted with random.seed(number) and sample(filenames, how_much) instead of sample() alone, because I want the data to shuffle, but in a deterministic way
@@ -54,10 +55,43 @@
 	Error fixed: Had forgotten to change class_mode for val_ds to categorical
 	Model finally running smoothly for the first time. Exhausted but feeling kind of better finally
 
-To Do: 	RESEARCH MORE
-	BASELINE MODELs BEFORE BALANCED SET MODELs
-		1. Baseline of imbalanced
-		2. Baseline of balanced
-		3. Fine-tuned balanced ****need to see how I can automate fine-tuning?****
-	KERAS
-	XGBOOST
+24/07:	Experimenting with different resolutions for pictures of imbalanced data. So far seems that 256x256 give slightly better results
+	Created new notebook containing only models with data already sorted for the experimentation. Duplicated it to use for actual work on models from now on
+	
+	More CNN Resources:
+			Regarding the batch_size	--> https://machinelearningmastery.com/how-to-control-the-speed-and-stability-of-training-neural-networks-with-gradient-descent-batch-size/
+			ImageDataGenerator		--> https://www.analyticsvidhya.com/blog/2020/08/image-augmentation-on-the-fly-using-keras-imagedatagenerator/
+				Documentation		--> https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/image/ImageDataGenerator
+			rescale parameter		--> https://datascience.stackexchange.com/questions/92499/rescale-parameter-in-data-augmentation
+	
+	Experimenting with parameter settings for image augmentation. Must find a protokoll and go with it so I can move on to next steps. Thought of more tailored protokoll but increase in performance seems to be painfully slow. Not enough time to let more epochs run
+	Possibly have decided on universal settings for augmentation. Will prepare list of batch sizes for model to iteratively use and plot the resulting accuracies and maybe also losses right after
+	Image augmentation parameters set. Model run with imbalanced set, currently running with balanced set.
+	Accuracy scores of balanced set are up the wazoo already after the first couple of epochs. Probably won't need to run for different batch sizes as I planned and can move on to beutifying stuff.
+
+25/07:	Running balanced set through the model again. Accuracy scores for 1st epochs make more sense. Learning curve doesn't start ath .94. Seems that it was an error. The model must have not truly reset
+	Will let it run as I'm at work
+	Decided to drop XGBoost. Acuracy scores and loss seem very agreeable anyways and extracting the features from layers of keras is a potentially good idea but not for now.
+	Started structuring notebooks, cleaning and tidying up
+	Added visualization of dataset
+	Created table of contents
+
+26/07 	Custom cmaps created
+	History can't be used to retroactively extract scores and plot them. Will have to run the code again to change colors
+	When batch size is the entire set kernal dies, probably not enough ram
+	run_keras function seems to be executing just fine otherwise
+	Found fix for the table of contents but it doesn't work online
+	Found out why keras didn't utilize my gpu. Trying to fix it
+	
+	Resources:
+		Multiclass cm and class. report	--> https://towardsai.net/p/l/multi-class-model-evaluation-with-confusion-matrix-and-classification-report
+
+	Confusion matrices fixed
+	Started with readme but have still some way to go
+	Should I set things up so I can make tensorflow make use of my GPU? Maybe it doesn't matter at this point. No time left
+
+To Do:	Write code to delete temp_test files after creation of confusion matrices
+	Readme
+	Run with models whole?
+	RESEARCH MORE
+		KERAS
