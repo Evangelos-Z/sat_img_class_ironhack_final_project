@@ -49,7 +49,7 @@ The time constrain along with the suboptimal resource management by Tesnsorflow 
 
 ## Special Thanks and Acknowledgments
 
-This project would not have been possible if not for: the assistance, guidance & emotional support of:
+This project would not have been possible if not for:
 
 Xisca, whose guidance, hands-on knowledge and words of encouragement helped me push through.
 
