@@ -1,6 +1,8 @@
 # Satellite Imagery Classification (multi-class)
 
 The present project was conducted as the final assignment for a remote Data Analytics Bootcamp at Ironhack and was carried out in 10 days.
+<br>
+<br>The process followed has been saved in 2 Notebooks,  the first one [TITLES TITLES] pertaining to the data cleaning and the second one [TITLES TITLES] containing data augmentation, model training, evaluation and a short demo.
 
 ## Problem Description
 Classification of satellite photography into 4 classes ("cloudy", "desert", "green area" or "water"), depending on the area depicted.
@@ -16,7 +18,7 @@ The model's architecture was provided through the courtesy of [Isi](https://gith
 Parameter tuning was conducted manually and was based on paradigms, articles and documentation.
 
 ## The Juice
-
+The model performed fairly well both when dealing with imbalanced as well as with balanced data (95% and 98% accuracy respectively), but it was more stable throughout the process when dealing with the balanced set. 
 
 
 ## Environment:
