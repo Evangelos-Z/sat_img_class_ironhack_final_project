@@ -55,9 +55,9 @@ Xisca, whose guidance, hands-on knowledge and words of encouragement helped me p
 
 Laz, who has been my anchor to reality, supported me and has helped me debug my brain when I needed it most.
 
-[Sabina](https://github.com/sabinagio), who has been an inspiration from day 1 and whose resources moved me forward 
+[Sabina](https://github.com/sabinagio), who has been an inspiration from day 1 
 
-and lastly, but far, far from least [Isi](https://github.com/isi-mube), who seems to believe in me more than I do myself.
+and lastly, but far, far from least [Isi](https://github.com/isi-mube), who seems to believe in me more than I do myself.<br>
                                     [...]It seems unforgiving when a good thing ends. But you and I will always be back then.
 
  
