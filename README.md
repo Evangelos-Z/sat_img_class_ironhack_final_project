@@ -1,4 +1,4 @@
-# Satellite Imagery Classification (multi-class)
+# Satellite Image Classification with Keras (multi-class)
 
 The present project was conducted as the final assignment for a remote Data Analytics Bootcamp at Ironhack and was carried out in 10 days.
 <br>
