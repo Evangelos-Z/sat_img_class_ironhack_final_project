@@ -25,21 +25,21 @@ JupyterLab
 
 ## Libraries, Utils & APIs
 
-Pandas
-Numpy
-Os
-Shutil
-Re
-Matplotlib
-Seaborn
-PIL
-Random
-Tensorflow
-Keras
-Sklearn
-Warnings
-Time
-Winsound
+Pandas<br>
+Numpy<br>
+Os<br>
+Shutil<br>
+Re<br>
+Matplotlib<br>
+Seaborn<br>
+PIL<br>
+Random<br>
+Tensorflow<br>
+Keras<br>
+Sklearn<br>
+Warnings<br>
+Time<br>
+Winsound<br>
 
 
 ## Hurdles
