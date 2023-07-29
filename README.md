@@ -56,8 +56,8 @@ This project would not have been possible if not for:
 
 - [Sabina](https://github.com/sabinagio), who has been an inspiration from day 1 on this bootcamp and whose influence on my scripts is all too obvious.
 
-- & last, but far, far from least [Isi](https://github.com/isi-mube). Thank you for all the help, technical support, the psychological support, the code sharing and for being such a sweet person.         																				<br>[...]If there was some amazing force outside of time
-																						<br>To take us back to where we were
-																								<br>And hang each moment up like pictures on the wall.
+- & last, but far, far from least [Isi](https://github.com/isi-mube). Thank you for all the help, technical support, the psychological support, the code sharing and for being such a sweet person.         _<br>[...]If there was some amazing force outside of time
+<br>To take us back to where we were
+<br>And hang each moment up like pictures on the wall._
 
  
