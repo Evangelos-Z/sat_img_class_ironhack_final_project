@@ -15,6 +15,8 @@ Parameter tuning during first touch was conducted manually and was based on para
 <br>
 <br>The process followed has been saved in 2 Notebooks,  the first one [satimclass_data_cleaning](https://github.com/Evangelos-Z/Ironhack_Final_Project-Sat_Img_Class/blob/main/satimclass_data_cleaning.ipynb) pertaining to the data cleaning and the second one [satimclass_training_evaluation_keras](https://github.com/Evangelos-Z/Ironhack_Final_Project-Sat_Img_Class/blob/main/satimclass_training_evaluation_keras.ipynb) containing the script on data augmentation, model training, evaluation, a short demo of the model's capabilities when evaluated against the test data and finally a further exploration on the performance of the model for different settings of batch size and learning rate.
 
+In addition, 2 folders one for the imbalanced and one for the balanced data can be found in this repo, each containing .csv files with mapping references of the image data for the total data used as well as for the training, validation and test sets.
+
 ## Model Performance
 The model performed fairly well both when in with imbalanced as well as with balanced data (96% and 98% accuracy respectively), but it was more stable throughout the process when dealing with the balanced set and was able to get closer to its learning curve's plateau faster. 
 
